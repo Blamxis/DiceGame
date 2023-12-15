@@ -418,3 +418,57 @@ i {
     } 
 }
 
+@media (max-width: 400px) {
+   
+    .player-name1 {
+        top: 120px;
+    }
+
+    .player-name2 {
+        margin-bottom: -20px;
+    }
+
+    .score {
+        margin-top: 120px;
+    }
+
+    .active .name::after {
+        top: -25px;
+        left: 520px;
+    }
+
+    .current-box {
+        width: 10%;
+        height: 18%;
+        top: 300px;
+        left: 45%;
+    }
+
+    .current-label {
+        font-size: 1em;
+    }
+
+    .dice_container {
+        left: 55%;
+        top: 450px;
+    }
+
+    .new {
+        font-size: 1em;
+        left: 50%;
+        top: 96%;
+    }
+
+    .roll {
+        font-size: 1em;
+        top: 92%;
+        left: 41%;
+    }
+
+    .hold {  
+        font-size: 1em;
+        top: 92%;
+        left: 59%;
+    } 
+}
+
