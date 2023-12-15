@@ -96,5 +96,60 @@ body {
     font-size: 30px;
 }
 
+/*** BUTTONS ***/
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    font-weight: 600;
+}
+
+button:hover i {
+    margin-right: 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.new {
+    font-size: 1.5em;
+    top: 50px;
+}
+
+.roll {
+    font-size: 1.3em;
+    top: 500px;
+}
+
+.hold {
+    font-size: 1.3em;
+    top: 560px;
+}
+
 
 
