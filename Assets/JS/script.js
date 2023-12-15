@@ -110,4 +110,11 @@ function nextPlayer() {
     document.querySelector(".panel_1").classList.toggle('active');
     document.querySelector(".panel_2").classList.toggle('active');
   
-  }
+}
+
+// Écouteurs d'événements
+rollBtn.addEventListener("click", randomDice);
+holdBtn.addEventListener("click", holdScore);
+newGameBtn.addEventListener("click", initGame);
+
+initGame();
