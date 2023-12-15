@@ -277,3 +277,33 @@ i {
                 50px 50px black;
 }
 
+/*** MEDIA QUERIES ***/
+
+@media (max-width: 1000px) {
+    .active .name::after {
+        top: -20px;
+        right: -60px;
+    }
+
+    .name {
+        font-size: 1.5em;
+    }
+
+    .current-box {
+        width: 40%;
+        left: 100px;
+    }
+
+    .current-label {
+        font-size: 1em;
+    }
+
+    .dice_container {
+        position: absolute;
+        left: 57%;
+        width: 200px;
+        transform: translateX(-50%);
+        top: 270px;
+    }
+}
+
