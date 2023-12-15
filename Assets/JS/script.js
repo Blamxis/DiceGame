@@ -50,3 +50,36 @@ function randomDice() {
     diceRolled = true;
   }
 }
+
+// Ajuste la face du dé en fonction du numéro
+function setDiceFace(number) {
+    switch (number) {
+      case 1:
+        dice.style.transform = "rotateX(0deg) rotateY(0deg)";
+        break;
+  
+      case 6:
+        dice.style.transform = "rotateX(180deg) rotateY(0deg)";
+        break;
+  
+      case 2:
+        dice.style.transform = "rotateX(-90deg) rotateY(0deg)";
+        break;
+  
+      case 5:
+        dice.style.transform = "rotateX(90deg) rotateY(0deg)";
+        break;
+  
+      case 3:
+        dice.style.transform = "rotateX(0deg) rotateY(90deg)";
+        break;
+  
+      case 4:
+        dice.style.transform = "rotateX(0deg) rotateY(-90deg)";
+        break;
+    }
+  
+    dice.style.animation = "none";
+  }
+
+  
