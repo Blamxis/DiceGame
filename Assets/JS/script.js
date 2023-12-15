@@ -35,6 +35,9 @@ function initGame() {
 // Lance un dé aléatoire et met à jour le score
 function randomDice() {
   if (gamePlaying) {
+
+    holdBtn.disabled = true;
+
     let diceNumber = Math.floor(Math.random() * 6) + 1;
     dice.style.animation = "rolling 6s";
 
@@ -48,6 +51,7 @@ function randomDice() {
         document.querySelector("#current-" + activePlayer).textContent = "0";
         nextPlayer();
       }
+      holdBtn.disabled = false;
     }, 6050);
 
     diceRolled = true;
