@@ -82,4 +82,20 @@ function setDiceFace(number) {
     dice.style.animation = "none";
   }
 
+// Conserve le score et passe au joueur suivant
+function holdScore() {
+    if (gamePlaying && diceRolled) {
+      scores[activePlayer] += roundScore;
+      document.querySelector("#score-" + activePlayer).textContent =
+        scores[activePlayer];
   
+      document.querySelector("#current-" + activePlayer).textContent = 0;
+  
+      if (scores[activePlayer] >= 100) {
+        document.querySelector("#name-" + activePlayer).textContent = "Winner !";
+        gamePlaying = false;
+      } else {
+        nextPlayer();
+      }
+    }
+  }
