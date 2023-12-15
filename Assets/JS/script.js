@@ -99,3 +99,15 @@ function holdScore() {
       }
     }
   }
+
+// Passe au joueur suivant
+function nextPlayer() {
+    activePlayer = activePlayer === 0 ? 1 : 0;
+    roundScore = 0;
+    diceRolled = false;
+   
+    // Bascule la classe active
+    document.querySelector(".panel_1").classList.toggle('active');
+    document.querySelector(".panel_2").classList.toggle('active');
+  
+  }
