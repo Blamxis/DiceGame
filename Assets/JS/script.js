@@ -25,6 +25,9 @@ function initGame() {
   document.querySelector("#score-0").textContent = "0";
   document.querySelector("#score-1").textContent = "0";
 
+  document.querySelector("#name-0").textContent = "Joueur 1";
+  document.querySelector("#name-1").textContent = "Joueur 2";
+
   document.querySelector(".panel_1").classList.add("active");
   document.querySelector(".panel_2").classList.remove("active");
 }
@@ -93,6 +96,7 @@ function holdScore() {
   
       if (scores[activePlayer] >= 100) {
         document.querySelector("#name-" + activePlayer).textContent = "Winner !";
+        document.querySelector("#name-" + (activePlayer === 0 ? 1 : 0)).textContent = "Loser";
         gamePlaying = false;
       } else {
         nextPlayer();
